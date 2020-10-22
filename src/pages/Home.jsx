@@ -11,7 +11,8 @@ function Home(props) {
                     ['Мясные', 'Вегетрианские', 'Гриль', 'Острые', 'Закрытые']
                 }/>
 
-                <SortPopup items={['популряности', 'цене', 'алфавит']}/>
+                <SortPopup
+                    items={[{name: 'популряности', type: 'popular'}, {name: 'цене', type: 'price'}, {name: 'алфавит', type: 'aplphabet'}]}/>
 
 
             </div>

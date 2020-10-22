@@ -26,7 +26,6 @@ function PizzaBlock({name, imageUrl, price, sizes, types}) {
                         })} onClick={() => setActiveType(index)}
                         > {type} </li>)
                     }
-
                 </ul>
                 <ul>
                     {

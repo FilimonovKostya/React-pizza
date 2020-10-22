@@ -5,7 +5,7 @@ function SortPopup(props) {
     const sortRef = React.useRef(null)
     const toggleVisiblePopup = () => setVisiblePopup(!visiblePopup)
     const [activeItem, setActiveItem] = React.useState(0)
-    const activeName = props.items[activeItem]
+    const activeName = props.items[activeItem].name
 
     const handleOutsideCLick = (e) => {
         if (!e.path.includes(sortRef.current)) {
@@ -45,7 +45,7 @@ function SortPopup(props) {
                 <ul>
                     {
                         props.items.map((m, index) => <li onClick={() => onSelectItem(index)}
-                                                          className={activeItem === index ? 'active' : ''} key={index}> {m} </li>)
+                                                          className={activeItem === index ? 'active' : ''} key={index}> {m.name} </li>)
                     }
                 </ul>
             </div>}
