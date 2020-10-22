@@ -5,10 +5,9 @@ import './scss/app.scss'
 import App from './App'
 
 ReactDom.render(
-    <React.StrictMode>
+
         <BrowserRouter>
             <App/>
-        </BrowserRouter>
-    </React.StrictMode>,
+        </BrowserRouter>,
     document.getElementById('root')
 )
